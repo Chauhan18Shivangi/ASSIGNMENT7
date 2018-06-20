@@ -1,0 +1,84 @@
+#Ques1
+
+radius=float(input("enter number:"))
+def area(rad):
+    area=3.14*rad*rad
+    return area
+ar=area(radius)
+print(ar)
+
+#Ques2
+
+n=6
+def perfect(n):
+    sum=0
+    for i in range(1,n):
+        if(n%i==0):
+            sum=sum+i
+    if(sum==n):
+        return True
+    else:
+        return False
+for i in range(1,1001):
+    if(perfect(i)==True):
+        print(i)
+
+ #Ques3
+
+n=12
+def mul(n,i=1):
+    print(n*i)
+    if i!=10:
+        mul(n,1+i)
+print(mul(12))
+
+#Ques4
+
+def power(a,b):
+    if(b==1):
+        return a
+    if(b!=1):
+        return(a*power(a,b-1))
+a=int(input("enter number:"))
+b=int(input("enter number:"))
+print("result:",power(a,b))
+
+#Ques5
+
+
+def factorial(n):
+    if(n<=1):
+        return 1
+    else:
+        return(n*factorial(n-1))
+d={}
+n=int(input("enter number:"))
+print("factorial:")
+print(factorial(n))
+d[n]=factorial(n)
+print(d)
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
